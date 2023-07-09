@@ -1,0 +1,34 @@
+/ FirstCppAsm.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+extern  "C"  void  clear();
+
+int main()   
+{
+	clear();
+	//define  variables
+	unsigned  long   Multiplier,final_result;
+	unsigned  short  length_table,i;
+	
+	//switch  to  assembly
+	printf("Enter the length of the table :");
+	scanf_s("%hX", &length_table); 
+
+	printf("Enter the Multipler of which you want table :");
+	scanf_s("%hX", &Multiplier);
+
+	for(i=1;i<=length_table;i++){
+	_asm
+	{
+	MOVZX EAX,i
+	MOV EBX,Multiplier
+	Mul EBX
+	Mov final_result,EAX
+	}
+	printf("%hX X %hX = %hX\n", Multiplier,i,final_result);
+	}
+	
+	return 0;
+}

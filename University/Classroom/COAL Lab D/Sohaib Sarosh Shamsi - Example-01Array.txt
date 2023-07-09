@@ -1,0 +1,127 @@
+INCLUDE IRVINE32.INC
+.DATA
+array WORD 1000h,2000h,3000h,6000h
+.CODE
+MAIN PROC
+mov ebx,OFFSET array
+mov esi,0
+mov ax,[ebx+esi] ; AX = 2000h
+call dumpregs
+exit
+main endp
+end main
+
+
+
+
+
+//////////////////////////////////////
+
+
+INCLUDE IRVINE32.INC
+.DATA
+tableB BYTE 10h, 20h, 30h, 40h, 50h
+Rowsize = ($ - tableB)
+BYTE 60h, 70h, 80h, 90h, 0A0h
+BYTE 0B0h, 0C0h, 0D0h, 0E0h, 0F0h
+
+
+.CODE
+MAIN PROC
+row_index = 2
+column_index = 2
+mov ebx,OFFSET tableB ; table offset
+add ebx,RowSize * row_index ; row offset
+mov esi,column_index
+mov al,[ebx + esi] ; AL = 80h
+
+
+call dumpregs
+exit
+main endp
+end main
+
+
+
+
+/////////////////////////////////
+
+
+INCLUDE IRVINE32.INC
+.DATA
+tableB BYTE 10h, 20h, 30h, 40h, 50h
+Rowsize = ($ - tableB)
+BYTE 60h, 70h, 80h, 90h, 0A0h
+BYTE 0B0h, 0C0h, 0D0h, 0E0h, 0F0h
+BYTE 0fah, 0fbh, 0fch, 0fdh, 0ffh
+
+.CODE
+MAIN PROC
+row_index = 3
+column_index = 3
+mov ebx,OFFSET tableB ; table offset
+add ebx,RowSize * row_index ; row offset
+mov esi,column_index
+mov al,[ebx + esi] ; AL = 80h
+
+
+call dumpregs
+exit
+main endp
+end main
+
+
+
+
+////////////////////////////////////////////
+
+
+
+
+Scale Factors
+If you’re writing code for an array of WORD, multiply the index operand by a scale factor of 2.
+
+
+INCLUDE IRVINE32.INC
+.DATA
+tableW WORD 10h, 20h, 30h, 40h, 50h
+RowsizeW = ($ - tableW)
+WORD 60h, 70h, 80h, 90h, 0A0h
+WORD 0B0h, 0C0h, 0D0h, 0E0h, 0F0h
+
+.CODE
+MAIN PROC
+row_index = 1
+column_index = 2
+mov ebx,OFFSET tableW ; table offset
+add ebx,RowSizeW * row_index ; row offset
+mov esi,column_index
+mov ax,[ebx + esi*TYPE tableW] ; AX = 0080h
+
+
+call dumpregs
+exit
+main endp
+end main
+
+
+
+
+The scale factor used in this example (TYPE tableW) is equal to 2. Similarly, you must use a
+scale factor of 4 if the array contains doublewords:
+tableD DWORD 10h, 20h, ...etc.
+.code
+mov eax,[ebx + esi*TYPE tableD]
+
+
+
+
+
+
+
+
+
+
+
+
+

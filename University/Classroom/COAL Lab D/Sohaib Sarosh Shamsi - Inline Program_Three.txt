@@ -1,0 +1,27 @@
+// ThirdCppAsm.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+void ptr_func(int *ptr_addr,int length_arr){
+	unsigned long final_result;
+	_asm
+	{
+		MOV ECX,length_arr
+		MOV ESI,ptr_addr
+		MOV EAX,0
+L1:
+		ADD EAX,[ESI]
+		ADD ESI,4
+		LOOP L1
+		MOV final_result,EAX
+	}
+	printf("The sum of array is %d\n",final_result);
+}
+
+int main()
+{
+	int arr[]={1,4,5,10,7};
+	ptr_func(&arr[0],5);
+	return 0;
+}
