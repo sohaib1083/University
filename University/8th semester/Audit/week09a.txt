@@ -1,0 +1,101 @@
+liquidity:
+Cash is the most liquid asset, while real estate, fine art and collectibles are all relatively illiquid.
+
+market liquidity:
+In business, economics or investment, market liquidity is a market's ability to facilitate the purchase or sale of an asset without causing drastic change in the asset's price.
+
+leverage ratio:
+A leverage ratio is any one of several financial measurements that look at how much capital comes in the form of debt (loans), or assesses the ability of a company to meet financial obligations.
+
+equity:
+the value of the shares issued by a company.
+"he owns 62% of the group's equity"
+
+cash ratio:
+The cash ratio is the ratio of a company's total cash and cash equivalents to its current liabilities. The cash ratio is most commonly used as a measure of company liquidity.
+cash ratio = (cash + cash equivalents)/ (total current liabilities)
+
+Quick ratio:
+The quick ratio compares the total amount of cash + marketable securities + accounts receivable to the amount of current liabilities.
+The quick ratio is also known as the acid test ratio.
+The quick ratio is an indicator of a company’s short-term liquidity. The quick ratio measures a company’s ability to meet its short-term obligations with its most liquid assets. For this reason, the ratio excludes inventories from current assets, and is calculated as follows:
+Quick ratio = (current assets – inventories) / current liabilities, or
+
+= (cash and equivalents + marketable securities + accounts receivable) / current liabilities
+
+current ratio:
+The current ratio is a liquidity ratio that measures a company's ability to pay short-term and long-term obligations. To gauge this ability, the current ratio considers the total assets of a company (both liquid and illiquid) relative to that company’s total liabilities.
+
+The formula for calculating a company’s current ratio, then, is:
+
+Current Ratio = Current Assets / Current Liabilities
+
+The current ratio is called “current” because, unlike some other liquidity ratios, it incorporates all current assets and liabilities.
+
+Accounts receivable (AR):
+Accounts receivable (AR) refers to money owed by customers (individuals or corporations) to another entity in exchange for goods or services that have been delivered or used, but not yet paid for.
+
+Accounts payable (AP):
+Accounts payable (AP) is an accounting entry that represents an entity's obligation to pay off a short-term debt to its creditors. The accounts payable entry is found on a balance sheet under the heading current liabilities.
+
+Debt - Equity Ratio:
+The D/E ratio indicates how much debt a company is using to finance its assets relative to the amount of value represented in shareholders’ equity.
+Debt - Equity Ratio = Total Liabilities / Shareholders' Equity
+
+Times interest earned:
+Times interest earned (TIE) is a metric used to measure a company's ability to meet its debt obligations. It is calculated by taking a company's earnings before interest and taxes (EBIT) and dividing it by the total interest payable on bonds and other contractual debt. It is usually quoted as a ratio and indicates how many times a company can cover its interest charges on a pretax basis. Failing to meet these obligations could force a company into bankruptcy.
+
+Gross profit:
+Gross profit is a company's total revenue (equivalent to total sales) minus the cost of goods sold. Gross profit is the profit a company makes after deducting the costs associated with making and selling its products, or the costs associated with providing its services. formula: Gross profit = revenue (total sales) - cost of goods sold
+
+
+Net Profit
+63
+What it is:
+
+Net profit represents the number of sales dollars remaining after all operating expenses, interest, taxes and preferred stock dividends (but not common stock dividends) have been deducted from a company's total revenue. 
+How it works (Example):
+
+Net profit is also referred to as the bottom line, net income, or net earnings. The formula for net profit is as follows:
+Total Revenue -Total Expenses = Net Profit
+
+Net profit:
+Net profit is found on the last line of the income statement, which is why it's often referred to as the bottom line.  Let's look at a hypothetical income statement for Company XYZ:
+
+Income Statement for Company XYZ, Inc.
+for the year ended December 31, 2008
+
+Total Revenue                        $100,000
+
+Cost of Goods Sold               ($ 20,000)
+Gross Profit                             $ 80,000
+
+Operating Expenses    
+ Salaries               $10,000   
+ Rent                    $10,000
+ Utilities                 $  5,000
+ Depreciation        $  5,000
+Total Operating Expenses    ($ 30,000)
+
+Interest Expense                   ($ 10,000)
+
+Taxes                                       ($ 10,000)
+
+Net Profit                                  $ 30,000
+
+By using the formula we can see that Net Profit = $100,000 - $20,000 - $30,000, - $10,000 - $10,000 = $30,000
+
+
+Profit Margin:
+Profit Margin = Net Income / Net Sales (revenue)
+
+Return on equity (ROE):
+Return on equity (ROE) is the amount of net income returned as a percentage of shareholders equity. Return on equity measures a corporation's profitability by revealing how much profit a company generates with the money shareholders have invested.
+Return on Equity = Net Income/Shareholder's Equity
+
+Return on common equity:
+Return on common equity (ROCE) can be defined as the amount of profit or net income a company earns per invesment dollar.
+Return on common equity, explained is a measure of how well a company uses its investment dollars to generate profits.
+
+ROCE = Net Income (NI)/ Average Common Shareholder’s Equity:
+The average common equity is found by combining the beginning common stock for the year on the balance sheet, and the ending common stock value. These values are then divided by two for the average amount in the year.
