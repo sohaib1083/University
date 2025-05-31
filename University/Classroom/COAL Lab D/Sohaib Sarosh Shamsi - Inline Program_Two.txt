@@ -1,0 +1,64 @@
+// SecondCppAsm.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+extern "C" void clear();
+
+void add_num(int num1,int num2){
+	unsigned long final_result;
+	_asm
+	{
+		MOVZX EAX, num1
+		MOVZX EBX, num2
+		ADD EAX,EBX
+		MOV final_result, EAX
+	}
+	printf("The sum of two parameters are :%d\n",final_result);
+}
+
+void sub_num(int num1,int num2){
+	unsigned long final_result;
+	_asm
+	{
+		MOVZX EAX, num1
+		MOVZX EBX, num2
+		SUB EAX,EBX
+		MOV final_result, EAX
+	}
+	printf("The Minus of two parameters are :%d\n",final_result);
+}
+
+void mul_num(int num1,int num2){
+	unsigned long final_result;
+	_asm
+	{
+		MOVZX EAX, num1
+		MOVZX EBX, num2
+		MUL EBX
+		MOV final_result, EAX
+	}
+	printf("The Product of two parameters are :%d\n",final_result);
+}
+
+void div_num(int num1,int num2){
+	unsigned long final_result;
+	_asm
+	{
+		MOVZX EAX, num1
+		MOVZX EBX, num2
+		DIV BL
+		MOV final_result, EAX
+	}
+	printf("The Divide of two parameters are :%d\n",final_result);
+}
+
+int main()
+{
+	clear();
+	add_num(5,2);
+	sub_num(10,4);
+	mul_num(40,2);
+	div_num(10,5);
+	return 0;
+}
